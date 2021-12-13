@@ -12,7 +12,7 @@ class FirstActivity1 : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first)
         Handler(Looper.getMainLooper()).postDelayed({
-            throw RuntimeException("Islam should handle this crash")
+            throw RuntimeException("Islam should handle this crash!!")
         }, 1000)
     }
 }
