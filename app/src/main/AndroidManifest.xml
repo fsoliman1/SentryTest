@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sentrypoc">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SentryPoc">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".TransparentActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".two.HeavyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".three.TransitionAnimationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".one.FirstActivity1"
+            android:exported="true" />
+        <activity
+            android:name=".DelayedActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="io.sentry.dsn"
+            android:value="https://34e0581395ca4b96bc480fd32aa7524b@o407027.ingest.sentry.io/5275512" />
+        <meta-data
+            android:name="io.sentry.traces.sample-rate"
+            android:value="1.0" />
+    </application>
+
+</manifest>
