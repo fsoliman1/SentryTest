@@ -13,10 +13,11 @@ class FirstActivity1 : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first)
         Handler(Looper.getMainLooper()).postDelayed({
-            crash3()
+            crash4()
         }, 1000)
     }
 
     fun crash2(): Unit = throw IllegalStateException("Islam should handle this different crash");
     fun crash3(): Unit = throw IllegalArgumentException("Islam should handle this different new crash");
+    fun crash4(): Unit = throw IllegalThreadStateException("Islam should handle this different brand new crash");
 }
