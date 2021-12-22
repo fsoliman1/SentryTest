@@ -16,7 +16,7 @@ class FirstActivity1 : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first)
         Handler(Looper.getMainLooper()).postDelayed({
-            crash6()
+            crash7()
         }, 1000)
     }
 
