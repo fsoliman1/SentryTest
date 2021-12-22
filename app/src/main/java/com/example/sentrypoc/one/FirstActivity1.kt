@@ -25,4 +25,5 @@ class FirstActivity1 : BaseActivity() {
     fun crash4(): Unit = throw IllegalThreadStateException("Islam should handle this different brand new crash");
     fun crash5(): Unit = throw NumberFormatException("Islam should handle this different brand new second crash");
     fun crash6(): Unit = throw ArithmeticException("Islam should handle this different brand new second crash");
+    fun crash7(): Unit = throw ArrayIndexOutOfBoundsException("Islam should handle this different brand new seventh crash");
 }
